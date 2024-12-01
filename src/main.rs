@@ -24,6 +24,10 @@ mod day23;
 mod day24;
 mod day25;
 
+use std::fs::read_to_string;
+
 fn main() {
-    
+    let input = read_to_string("input.txt").unwrap();
+    println!("{}", day01::part1(&input));
+    println!("{}", day01::part2(&input));
 }
