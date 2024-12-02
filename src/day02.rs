@@ -11,6 +11,7 @@ fn is_safe(v: &Vec<u32>) -> bool {
     strictly_monotone && gradual
 }
 
+// one pass solution exists, for now I'll just brute force it
 fn one_removed(v: &Vec<u32>) -> Vec<Vec<u32>> {
     (0..v.len()).map(|i| {
             let mut v = v.clone();
