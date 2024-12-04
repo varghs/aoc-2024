@@ -28,6 +28,6 @@ use std::fs::read_to_string;
 
 fn main() {
     let input = read_to_string("input.txt").unwrap();
-    println!("{}", day02::part1(&input));
-    println!("{}", day02::part2(&input));
+    println!("{}", day03::part1(&input));
+    println!("{}", day03::part2(&input));
 }
